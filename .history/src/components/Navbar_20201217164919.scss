@@ -1,0 +1,49 @@
+$mtnyellow: #FDCC01;
+
+
+.menu-bar {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    align-content: center!important;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: $mtnyellow;
+    padding: 1.5rem;
+    padding-bottom: 1;
+    text-align: center;
+
+
+    &-logo {
+        height: 3rem;
+    }
+
+    &-first-list {
+        display: inline-block;
+        // background: $mtnyellow;
+        display: flex;
+        justify-content: space-around;
+        // padding: 1.5rem;
+
+
+    }
+
+    &-second-list {
+        display: inline-block;
+        // background: $mtnyellow;
+        // padding: 1.5rem;
+
+
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+
+}
+li {
+    list-style: none;
+}

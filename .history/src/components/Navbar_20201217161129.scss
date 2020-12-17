@@ -1,0 +1,24 @@
+$mtnyellow: #FDCC01;
+
+.menu-bar {
+    font-size: 1.6rem;
+    background: $mtnyellow;
+    width: 100vw;
+    display: grid;
+    
+
+    &-logo {
+        height: 3rem;
+    }
+
+    &-first-list {
+        // display: flex;
+        // justify-content: space-around;
+        // padding: 2rem;
+    }
+
+
+}
+li {
+    list-style: none;
+}

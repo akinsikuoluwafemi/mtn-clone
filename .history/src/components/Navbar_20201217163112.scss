@@ -1,0 +1,38 @@
+$mtnyellow: #FDCC01;
+
+.menu-bar {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+        background: $mtnyellow;
+
+
+    &-logo {
+        height: 3rem;
+    }
+
+    &-first-list {
+        display: inline-block;
+        background: $mtnyellow;
+        display: flex;
+        justify-content: space-around;
+        padding: 1.5rem;
+
+    }
+
+    &-second-list {
+        display: inline-block;
+        background: $mtnyellow;
+        padding: 1.5rem;
+
+
+    }
+
+
+}
+li {
+    list-style: none;
+}
