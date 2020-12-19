@@ -1,0 +1,59 @@
+.existing-supplier-section {
+    // background: pink;
+    margin-top: 5rem;
+    background: pink;
+    margin-bottom: ;
+
+    &-header {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    &-text {
+        font-size: 1.5rem;
+    }
+
+
+
+}
+
+.supplier-card {
+    border-radius: 20px!important;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid  #f2f2f2;
+    box-shadow: 0 0 0 2px #f2f2f2;
+    transition: all .5s ease-in-out;
+    &-content {
+
+        padding: 2rem;
+
+           & > p {
+            font-size: 2rem;
+        }
+        
+
+    }
+
+    &-upload-icon {
+        background-color: #FDCC01;
+        padding: 2rem;
+        border-radius: 50%;
+        transition: background-color .4s ease-in-out;
+
+        &:hover {
+            background-color: #ffe05c!important;
+        }
+    }
+
+    &:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.23);
+    }
+
+
+}
+
+ 
+ 

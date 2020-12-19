@@ -1,0 +1,70 @@
+.footerr {
+    width: 100vw;
+    color: #fff;
+
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    &-item {
+
+        & > p {
+            font-weight: 400;
+            font-size: 2rem;
+        }
+
+
+        &-item-1 {
+            background: red;
+        }
+
+         &-item-2 {
+            background: pink;
+            
+        }
+
+         &-item-3 {
+            background: purple;
+            
+        }
+
+         &-item-4 {
+            background: maroon;
+            
+        }
+
+         &-item-5 {
+            background: teal;
+            
+        }
+
+         &-item-6 {
+            background: indianred;
+            
+        }
+
+         &-item-7 {
+            background: lemonchiffon;
+            
+        }
+
+         &-item-8 {
+            background: cyan;
+            
+        }
+
+         &-item-9 {
+            background: green;
+            
+        }
+            
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            font-weight: 400;
+        }
+
+
+    }
+}

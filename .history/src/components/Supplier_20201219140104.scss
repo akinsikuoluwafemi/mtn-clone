@@ -1,0 +1,48 @@
+.existing-supplier-section {
+    // background: pink;
+    margin-top: 5rem;
+
+    &-header {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    &-text {
+        font-size: 1.5rem;
+    }
+
+
+
+}
+
+.supplier-card {
+    border-radius: 20px!important;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid  #f2f2f2;
+    box-shadow: 0 0 0 2px #f2f2f2;
+    &-content {
+
+        padding: 2rem;
+
+           & > p {
+            font-size: 2rem;
+        }
+        
+
+    }
+
+    &-upload-icon {
+        background-color: #FDCC01;
+        padding: 2rem;
+        border-radius: 50%;
+    }
+    
+
+
+}
+
+ 
+ 
