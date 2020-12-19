@@ -1,0 +1,143 @@
+
+$mtnyellow: #FDCC01;
+
+.accordion {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 1.2rem 2.5rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-bottom: 1px solid #777;
+
+  &-search-container {
+      border: none;
+  border-bottom: 1px solid #777;
+  background-color: #000;
+
+    .accordion-search-input {
+
+
+    }
+
+  }
+
+  &-search-input {
+      
+        padding: 1.5rem 2.5rem!important;
+        width: 100%;
+        background-color: #000;
+        border: none;
+        outline: none;
+            color: #fff;
+            font-size: 1.6rem;
+
+
+        &::placeholder {
+            font-size: 1.7rem;
+            color: #ccc;
+
+        }
+       
+  }
+
+
+   
+
+  &-summary {
+      font-weight: bolder;
+      font-size: 1.7rem;
+
+  }
+
+  a {
+      color: inherit;
+      &:hover {
+        color: #ddd;
+
+      text-decoration: none;
+
+      }
+  }
+
+
+
+}
+
+.form-select {
+    border-radius: 50px;
+
+}
+
+.select {
+    font-size: initial!important;
+    border: none!important;
+    transition: all .2s ease-in-out;
+    outline: none;
+    border-radius: 50px;
+
+}
+.select:hover {
+    background: $mtnyellow;
+    border-radius: 50px;
+    outline: none;
+
+
+}
+
+
+/* Style the accordion panel. Note: hidden by default */
+.panel-hide {
+  display: none;
+  overflow: hidden;
+  background-color: #4C4C4C;
+    font-weight: bolder;
+  font-size: 1.6rem;
+
+}
+.panel-show {
+ 
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+   background-color: #4C4C4C;
+    font-weight: bolder;
+  font-size: 1.5rem;
+  
+
+  & > a{
+      margin-bottom: 0;
+      border-bottom: 1px solid #777;
+      padding: .8rem 0 .8rem 3.5rem;
+      color: #fff;
+
+      &:hover {
+          text-decoration: none;
+          color: #ddd;
+      }
+  }
+
+}
+
+.panel {
+    //  padding:  18px;
+  
+  
+//   padding-left: 5rem;
+
+  & > p {
+    border-bottom: 1px solid #777;
+
+  }
+}
+
+
+

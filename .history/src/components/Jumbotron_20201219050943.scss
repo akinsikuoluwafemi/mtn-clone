@@ -1,0 +1,26 @@
+.jumb-section {
+    background: red;
+    background-image: url('../images/jumb-image.jpg');
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+
+
+.curved {
+    background-image: url('../images/jumb-image.jpg');
+    height: 85vh;
+
+    
+
+    &-svg-jumbotron {
+        width: 100vw;
+        display: block;
+        margin-top: -6rem;
+        // margin-bottom: 4rem;
+        border: none;
+    }
+}
+

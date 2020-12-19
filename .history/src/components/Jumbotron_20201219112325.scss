@@ -1,0 +1,41 @@
+
+
+.curved {
+    background-image: url('../images/jumb-image.jpg');
+    height: 85vh;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    &-back-btn {
+        background-color:  #FDCC01;
+        padding: .6rem 1rem;
+        border-radius: 15px;
+        font-size: 1.5rem;
+        color: #000!important;
+        display: inline-block;
+        margin: 3rem 6rem;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &-svg-jumbotron {
+        width: 100vw;
+        display: block;
+        margin-top: -6rem;
+        // margin-bottom: 4rem;
+        border: none;
+        z-index: 10000;
+    }
+}
+
+.container-jumbotron-center {
+    margin-top: 3rem;
+    background: red;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}

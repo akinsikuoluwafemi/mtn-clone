@@ -1,0 +1,25 @@
+
+
+.curved {
+    background-image: url('../images/jumb-image.jpg');
+    height: 85vh;
+
+    &-back-btn {
+        background-color:  #FDCC01;
+        padding: 1rem 1rem;
+        border-radius: 15px;
+        font-size: 1.5rem;
+        color: #000!important;
+        display: inline-block;
+        padding-top: 3rem;
+    }
+
+    &-svg-jumbotron {
+        width: 100vw;
+        display: block;
+        margin-top: -6rem;
+        // margin-bottom: 4rem;
+        border: none;
+    }
+}
+
