@@ -13,6 +13,7 @@ export default function PictureList() {
     // console.log(photos)
 
     const handleClick = () => {
+        alert('just closed the modal')
         setShowModal(false)
     }
 

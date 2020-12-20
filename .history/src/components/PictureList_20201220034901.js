@@ -13,6 +13,7 @@ export default function PictureList() {
     // console.log(photos)
 
     const handleClick = () => {
+        alert('just closed the modal')
         setShowModal(false)
     }
 
@@ -21,8 +22,9 @@ export default function PictureList() {
             <div className="modal-content">
                 <span style={{cursor: 'pointer'}} onClick={handleClick}>
                 <ClearIcon />
+
                 </span>
-                {photos.length}
+
           <PictureItem photo={photos} />
         </div>
       </div>

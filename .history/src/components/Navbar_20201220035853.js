@@ -12,9 +12,10 @@ export default function Navbar() {
 
   let [menuOpen, setMenuOpen] = useState(false)
   const [query, setQuery] = useState('')
-  let { setPhotos} = useContext(PhotosContext);
+  let {photos, setPhotos} = useContext(PhotosContext);
   let { loading, setLoading } = useContext(LoadingContext);
-  let {  setShowModal } = useContext(ModalContext);
+  let { showModal, setShowModal } = useContext(ModalContext);
+  console.log(photos)
 
 
     const handleNavbar = () => {
@@ -47,12 +48,13 @@ export default function Navbar() {
       .then((response) => {
         setLoading(true)
         setShowModal(true);
+        console.log(response.results);
 
-        setPhotos(response.results);
-
-        setQuery('')
+        // setPhotos(response.results);
+        alert('show modal')
         setLoading(false);
 
+        setQuery('')
       }).catch(error => {
         alert('an error occured')
       })

@@ -3,7 +3,7 @@ import './Navbar.scss';
 import logo from '../images/mtn-logo-nav.svg';
 import MobileAccordion from './MobileAccordion';
 import {PhotosContext, LoadingContext, ModalContext} from '../ContextFile';
-import CircularProgress from "@material-ui/core/CircularProgress";
+
 
 export default function Navbar() {
    
@@ -12,10 +12,10 @@ export default function Navbar() {
 
   let [menuOpen, setMenuOpen] = useState(false)
   const [query, setQuery] = useState('')
-  let { setPhotos} = useContext(PhotosContext);
+  let {photos, setPhotos} = useContext(PhotosContext);
   let { loading, setLoading } = useContext(LoadingContext);
-  let {  setShowModal } = useContext(ModalContext);
-
+  let { showModal, setShowModal } = useContext(ModalContext);
+  console.log(photos)
 
     const handleNavbar = () => {
         setMenuOpen(prevValue => !prevValue)
@@ -46,13 +46,13 @@ export default function Navbar() {
       .then((data) => data.json())
       .then((response) => {
         setLoading(true)
-        setShowModal(true);
+        console.log(response.results);
 
         setPhotos(response.results);
-
-        setQuery('')
+        alert('show modal')
         setLoading(false);
 
+        setQuery('')
       }).catch(error => {
         alert('an error occured')
       })
@@ -244,7 +244,6 @@ export default function Navbar() {
               </li>
             </ul>
             <form
-              style={{display: 'flex', alignItems: 'center'}}
               onSubmit={handleSubmit}
               className="search-container menu-bar-container-second-list text-center"
             >
@@ -256,8 +255,8 @@ export default function Navbar() {
                 value={query}
                 onChange={handleQuery}
               />
-              {loading && <CircularProgress />}
             </form>
+        
           </div>
         </nav>
 

@@ -17,6 +17,8 @@ export default function Home() {
    let [photos, setPhotos] = useState([]);
     let [loading, setLoading] = useState(false);
     let [showModal, setShowModal] = useState(false)
+    console.log(photos)
+    console.log(loading)
 
    
     return (

@@ -9,20 +9,21 @@ export default function PictureList() {
     // let {loading, setLoading } = useContext(PhotosContext);
     
     let { photos, setPhotos } = useContext(PhotosContext);
-    let { showModal, setShowModal } = useContext(ModalContext);
+   let {} = useContext()
     // console.log(photos)
 
     const handleClick = () => {
-        setShowModal(false)
+        alert('just closed the modal')
     }
 
     return (
-      <div className={showModal ? `modal` : `hide-modal`}>
+      <div className="modal">
             <div className="modal-content">
                 <span style={{cursor: 'pointer'}} onClick={handleClick}>
                 <ClearIcon />
+
                 </span>
-                {photos.length}
+
           <PictureItem photo={photos} />
         </div>
       </div>

@@ -12,9 +12,9 @@ export default function Navbar() {
 
   let [menuOpen, setMenuOpen] = useState(false)
   const [query, setQuery] = useState('')
-  let { setPhotos} = useContext(PhotosContext);
+  let {photos, setPhotos} = useContext(PhotosContext);
   let { loading, setLoading } = useContext(LoadingContext);
-  let {  setShowModal } = useContext(ModalContext);
+  let { showModal, setShowModal } = useContext(ModalContext);
 
 
     const handleNavbar = () => {

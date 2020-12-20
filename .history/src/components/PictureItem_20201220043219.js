@@ -9,13 +9,12 @@ export default function PictureItem({photo}) {
             <img src={item.urls.thumb} />
           </span>
         ));
-        return renderedPhoto
     } 
 
 
     return (
         <div>
-           {mappedPhoto()}
+           PictureItem 
         </div>
     )
 }

@@ -15,7 +15,7 @@ export default function PictureItem({photo}) {
 
     return (
         <div>
-           {mappedPhoto()}
+           M
         </div>
     )
 }

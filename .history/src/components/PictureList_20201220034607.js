@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import { PhotosContext, LoadingContext, ModalContext } from '../ContextFile';
+import { PhotosContext, LoadingContext, modal } from '../ContextFile';
 import './PictureList.scss';
 import PictureItem from './PictureItem';
 import ClearIcon from "@material-ui/icons/Clear";
@@ -9,20 +9,21 @@ export default function PictureList() {
     // let {loading, setLoading } = useContext(PhotosContext);
     
     let { photos, setPhotos } = useContext(PhotosContext);
-    let { showModal, setShowModal } = useContext(ModalContext);
+   
     // console.log(photos)
 
     const handleClick = () => {
-        setShowModal(false)
+        alert('just closed the modal')
     }
 
     return (
-      <div className={showModal ? `modal` : `hide-modal`}>
+      <div className="modal">
             <div className="modal-content">
                 <span style={{cursor: 'pointer'}} onClick={handleClick}>
                 <ClearIcon />
+
                 </span>
-                {photos.length}
+
           <PictureItem photo={photos} />
         </div>
       </div>

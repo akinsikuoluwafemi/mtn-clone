@@ -17,34 +17,35 @@ export default function Home() {
    let [photos, setPhotos] = useState([]);
     let [loading, setLoading] = useState(false);
     let [showModal, setShowModal] = useState(false)
+    console.log(photos)
+    console.log(loading)
 
    
     return (
       <PhotosContext.Provider value={{ photos, setPhotos }}>
-        <LoadingContext.Provider value={{ loading, setLoading }}>
-          <ModalContext.Provider value={{ showModal, setShowModal }}>
+            <LoadingContext.Provider value={{ loading, setLoading }}>
+                <ModalContext.Provider
+          <div>
+            <Navbar />
+            <Jumbotron />
+            <PictureList/>
             <div>
-              <Navbar />
-              <Jumbotron />
-              <PictureList />
-              <div>
-                <SectionOne />
-                <img className="curved-svg-jumbotron" src={svgTop} alt="logo" />
-              </div>
-              <div style={{ background: "#f2f2f2" }} className=" py-4">
-                <SectionTwo />
-
-                <img
-                  className="curved-svg-jumbotron"
-                  src={FooterCurve}
-                  alt="footer-curve"
-                />
-              </div>
-              <div style={{ background: "#000" }}>
-                <Footer />
-              </div>
+              <SectionOne />
+              <img className="curved-svg-jumbotron" src={svgTop} alt="logo" />
             </div>
-          </ModalContext.Provider>
+            <div style={{ background: "#f2f2f2" }} className=" py-4">
+                <SectionTwo />
+                        
+              <img
+                className="curved-svg-jumbotron"
+                src={FooterCurve}
+                alt="footer-curve"
+              />
+            </div>
+            <div style={{ background: "#000" }}>
+              <Footer />
+            </div>
+          </div>
         </LoadingContext.Provider>
       </PhotosContext.Provider>
     );
