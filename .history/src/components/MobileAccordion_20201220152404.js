@@ -1,10 +1,9 @@
-import React, {useState, useContext} from 'react';
+import React, {useState} from 'react';
 import './MobileAccordions.scss';
 import AddIcon from "@material-ui/icons/Add";
 import RemoveIcon from "@material-ui/icons/Remove";
 import SelectCountry from './SelectCountry';
 import { PhotosContext, LoadingContext, ModalContext } from "../ContextFile";
-import CircularProgress from "@material-ui/core/CircularProgress";
 
 
 export default function MobileAccordion() {
@@ -13,10 +12,7 @@ export default function MobileAccordion() {
     const [support, setSupport] = useState(false);
     const [contact, setContact] = useState(false);
     const [query, setQuery] = useState("");
-      let { setPhotos } = useContext(PhotosContext);
-      let { loading, setLoading } = useContext(LoadingContext);
-      let { setShowModal } = useContext(ModalContext);
-
+    
 
     const handlePersonalChange = () => {
         setPersonal(prevValue => !prevValue)
@@ -48,28 +44,6 @@ export default function MobileAccordion() {
     }
   };
   
-
-  const searchPhotos = () => {
-    fetch(`https://api.unsplash.com/search/photos?page=1&query=${query}`, {
-      headers: {
-        Authorization: `Client-ID fbd3e9a832c5ab83514cd8b1d2a013db17c7348fc9b1495329da828508e4475c`,
-      },
-    })
-      .then((data) => data.json())
-      .then((response) => {
-        setLoading(true);
-
-        setPhotos(response.results);
-
-        setQuery("");
-        setShowModal(true);
-        setLoading(false);
-      })
-      .catch((error) => {
-        alert("an error occured");
-        console.log(error);
-      });
-  };
 
     
     return (
@@ -162,17 +136,14 @@ export default function MobileAccordion() {
         <div className={contact ? `panel-show` : `panel-hide`}>
           <a href=".">MTN Supplier</a>
         </div>
-        <form onSubmit={handleSubmit} className="accordion-search-container">
+        <form className="accordion-search-container">
           <input
             type="search"
             placeholder="search"
             className="accordion-search-input"
-            value={query}
-            onChange={handleQuery}
           />
-          {loading ? <CircularProgress /> : null}
         </form>
-        <SelectCountry />
+            <SelectCountry/>
       </div>
     );
 }

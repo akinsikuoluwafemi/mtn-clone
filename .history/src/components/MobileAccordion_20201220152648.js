@@ -4,7 +4,6 @@ import AddIcon from "@material-ui/icons/Add";
 import RemoveIcon from "@material-ui/icons/Remove";
 import SelectCountry from './SelectCountry';
 import { PhotosContext, LoadingContext, ModalContext } from "../ContextFile";
-import CircularProgress from "@material-ui/core/CircularProgress";
 
 
 export default function MobileAccordion() {
@@ -162,17 +161,14 @@ export default function MobileAccordion() {
         <div className={contact ? `panel-show` : `panel-hide`}>
           <a href=".">MTN Supplier</a>
         </div>
-        <form onSubmit={handleSubmit} className="accordion-search-container">
+        <form onSubmit={} className="accordion-search-container">
           <input
             type="search"
             placeholder="search"
             className="accordion-search-input"
-            value={query}
-            onChange={handleQuery}
           />
-          {loading ? <CircularProgress /> : null}
         </form>
-        <SelectCountry />
+            <SelectCountry/>
       </div>
     );
 }

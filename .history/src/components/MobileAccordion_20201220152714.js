@@ -4,7 +4,6 @@ import AddIcon from "@material-ui/icons/Add";
 import RemoveIcon from "@material-ui/icons/Remove";
 import SelectCountry from './SelectCountry';
 import { PhotosContext, LoadingContext, ModalContext } from "../ContextFile";
-import CircularProgress from "@material-ui/core/CircularProgress";
 
 
 export default function MobileAccordion() {
@@ -170,7 +169,6 @@ export default function MobileAccordion() {
             value={query}
             onChange={handleQuery}
           />
-          {loading ? <CircularProgress /> : null}
         </form>
         <SelectCountry />
       </div>
