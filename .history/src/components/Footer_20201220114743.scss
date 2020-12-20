@@ -1,0 +1,146 @@
+.footerr {
+    color: #fff;
+    height: fit-content;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    transition: all .5s ease-in-out;
+    row-gap: 2rem; 
+    padding: 6rem 0;   
+    margin-top: -1.5rem;
+    &-item {
+
+        
+
+        & > a {
+            font-weight: 550;
+            font-size: 1.7rem;
+            color: #fff;
+            display: inline-block;
+            &:hover {
+                color: #ddd;
+                text-decoration: none;
+            }
+            &:first-of-type {
+                margin-bottom: .8rem;
+
+            }
+        }
+
+
+        &-item-1 {
+            // background: red;
+        }
+
+         &-item-2 {
+            // background: pink;
+            
+        }
+
+         &-item-3 {
+            // background: purple;
+            
+        }
+
+         &-item-4 {
+            // background: maroon;
+            
+        }
+
+         &-item-5 {
+            // background: teal;
+            
+        }
+
+         &-item-6 {
+            // background: indianred;
+            
+        }
+
+         &-item-7 {
+            // background: lemonchiffon;
+            
+        }
+
+         &-item-8 {
+            // background: cyan;
+            
+        }
+
+         &-item-9 {
+            // background: green;
+            
+        }
+
+     
+            
+
+        &-info > a {
+            display: flex;
+            flex-direction: column;
+            font-weight: 500;
+            font-size: 1.3rem;
+            color: #fff;
+            margin-bottom: .6rem;
+
+
+            &:hover {
+                text-decoration: none;
+                color: #ddd;
+            }
+
+        }
+
+
+    }
+}
+
+.footer-end {
+    background: pink;
+    height: 30rem;
+    // padding:  10 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.footer-logos {
+    
+
+    &-flex {
+       
+    }
+
+    & > p {
+    }
+
+}
+.mobile-footer {
+    display: none;
+}
+@media(max-width: 572px){
+
+    .footerr {
+        display: none;
+        transition: display .5s ease-in-out;
+
+    }
+
+    .mobile-footer {
+        display: block;
+        transition: display .5s ease-in-out;
+
+    }
+
+    // .show {
+    //     transition: display 1s ease-in-out;
+    //     display: block;
+    // }
+    // .not-show {
+    //     transition: display 1s ease-in-out;
+    //     display: none;
+    // }
+
+
+}

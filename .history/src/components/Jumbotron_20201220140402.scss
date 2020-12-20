@@ -1,0 +1,81 @@
+
+
+.curved {
+    background-image: url('../images/jumb-image.jpg');
+    height: 85vh;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-bottom: -1rem;
+
+    &-back-btn {
+        background-color:  #FDCC01;
+        padding: .6rem 1rem;
+        border-radius: 15px;
+        font-size: 1.5rem;
+        color: #000!important;
+        display: inline-block;
+        margin: 3rem 6rem;
+        font-weight: 500;
+        transition: background-color .4s ease-in-out;
+
+
+        &:hover {
+            text-decoration: none;
+            background-color: #ffe05c!important;
+
+        }
+    }
+
+    &-svg-jumbotron {
+        width: 100vw;
+        display: block;
+        margin-top: -6rem;
+        // margin-bottom: 4rem;
+        border: none;
+        z-index: 10000;
+    }
+}
+
+.jumbotron-center {
+    
+
+    &-content {
+        margin-top: 10rem;
+        // text-align: center;
+        // background: red;
+
+        &-head {
+            margin-top: 12rem;
+        }
+
+    }
+
+
+    .header-text {
+        font-size: 5rem;
+        font-weight: 600;
+        letter-spacing: .5rem;
+
+    }
+
+
+}
+
+
+@media(max-width: 425px){
+    .header-text {
+        font-size: 3rem!important;
+        font-weight: 400!important;
+    }
+}
+    
+
+
+@media(max-width: 527px){
+    .curved-svg-jumbotron{
+        margin-top: -2rem;
+    }
+
+    
+}
